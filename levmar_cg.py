@@ -1,5 +1,5 @@
 #
-# Hessian free version of the LevMar method
+# Hessian-free version of the LevMar method
 # send comments to sergey.plyasunov@gmail.com
 #
 
@@ -36,7 +36,7 @@ def levmar_cg(func_grad_hess,x0, args=(),tol=1e-4,maxiter=100,callback=None):
 
     Returns
     -------
-    namedtuple(xopt,gopt,n_calls)
+    namedtuple Result(xopt,gopt,n_calls)
     """
     x0 = np.asarray(x0).flatten()
     xk = x0
