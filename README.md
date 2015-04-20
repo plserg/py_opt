@@ -1,1 +1,1 @@
-# py_opt: experimental with optimization
+# py_opt: experimental optimization methods
