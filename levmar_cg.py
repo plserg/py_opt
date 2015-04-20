@@ -1,6 +1,7 @@
-# -*- coding: utf-8 -*-
-# <nbformat>3.0</nbformat>
-
+#
+# Hessian free version of the LevMar method
+# send comments to sergey.plyasunov@gmail.com
+#
 
 import numpy as np
 from collections import namedtuple
