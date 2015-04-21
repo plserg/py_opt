@@ -1,3 +1,6 @@
+#
+# L1-lasso with CVXOPT (sergey.plyasunov@gmail.com)
+#
 from cvxopt import matrix,spmatrix,spdiag
 from cvxopt import solvers
 from cvxopt import lapack
