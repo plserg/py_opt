@@ -23,7 +23,7 @@ def l1tf(y,lambda_,maxiter=40,tol=1E-4):
     #
     # - y:          n-vector; original signal
     # - lambda:     scalar; positive regularization parameter
-    #
+    # - maxiter, tol ---scalar: max-iterations and tolerance
     # Output arguments:
     #   tuple:
     # - x:          n-vector; primal optimal point
@@ -61,8 +61,6 @@ def l1tf(y,lambda_,maxiter=40,tol=1E-4):
     DDT = np.dot(D,D.T)
     Dy  = np.dot(D,y)
     
-    print Dy.shape
-
     x = y[:]
     z   = np.zeros(m)   # dual variable
     mu1 = np.ones(m)    # dual of dual variable
