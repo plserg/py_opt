@@ -77,7 +77,7 @@ def l1tf(y,lambda_,maxiter=40,tol=1E-4):
         DTz  = np.dot(z.T,D).T
         DDTz = np.dot(D,DTz)
         w    = Dy-(mu1-mu2)
-        print "w:->",w.shape
+        #print "w:->",w.shape
         
         pobj1 = 0.5*np.dot(w.T,np.linalg.solve(DDT,w)) + lambda_* np.sum(mu1 + mu2)
         pobj2 = 0.5*np.dot(DTz.T,DTz) + lambda_* np.sum(np.abs(Dy-DDTz))
