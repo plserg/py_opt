@@ -33,14 +33,14 @@ def l1tf(y,lambda_,maxiter=40,tol=1E-4):
     # for more details,
     # see "l1 Trend Filtering", S. Kim, K. Koh, ,S. Boyd and D. Gorinevsky
     # www.stanford.edu/~boyd/l1_trend_filtering.html
-    #
+    # comments about numpy-translation: sergey.plyasunov@gmail.com
     #----------------------------------------------------------------------
     #               INITIALIZATION
     #----------------------------------------------------------------------
     
     # PARAMETERS
-    ALPHA     = 0.01   # backtracking linesearch parameter (0,0.5]
-    BETA      = 0.5    # backtracking linesearch parameter (0,1)
+    ALPHA     = 1E-2    # backtracking linesearch parameter (0,0.5]
+    BETA      = 5E-1    # backtracking linesearch parameter (0,1)
     MU        = 2      # IPM parameter: t update
     MAXITER   = maxiter     # IPM parameter: max iteration of IPM
     MAXLSITER = int(maxiter/2.0)     # IPM parameter: max iteration of line search
